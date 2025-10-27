@@ -10,6 +10,7 @@ export const loadAgents = async () => {
     }
 }
 
+
 export const loadMaps = async () => {
     try {
         const { data } = await axios.get("https://valorant-api.com/v1/maps");
