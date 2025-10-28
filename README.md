@@ -21,7 +21,7 @@ This project recreates the Valorant official website layout with modern web tech
 - *Styling:* Tailwind CSS, PostCSS
 - *Language:* JavaScript (ES6+)
 - *Build Tool:* Vite
-- *Deployment:* Netlify
+- *Deployment:* Vercel
 
 ## 👨‍💻 Contributors 💖
 
