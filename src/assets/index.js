@@ -29,6 +29,7 @@ export {
   instagram,
   linkedin,
   twitter,
+  github,
   overviewimg,
   herovedio,
   news1img,
