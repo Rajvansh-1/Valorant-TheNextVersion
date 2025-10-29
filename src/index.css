@@ -352,3 +352,89 @@ select {
 select>option{
   font-size: 1.5rem;
 }
+
+
+
+
+
+
+/* === Footer Styles === */
+
+/* --- Social Icon Hover Effect (Kept from before) --- */
+.social-icon-link {
+    transition: all 0.3s ease;
+    filter: grayscale(100%);
+}
+
+.social-icon-link:hover {
+    background-color: #ff4655;
+    box-shadow: 0 0 15px #ff4655, 0 0 25px #ff4655;
+    filter: grayscale(0%);
+    transform: scale(1.1) translateY(-5px);
+}
+
+/* --- Legal Link Hover Effect (Kept from before) --- */
+.legal-link {
+    transition: all 0.3s ease;
+}
+.legal-link:hover {
+    color: #ff4655;
+    text-shadow: 0 0 5px #ff4655;
+}
+
+
+/* --- NEW Developer Credit Styles --- 
+  (Replaces the old .gh-link and glitch styles)
+*/
+.dev-credit-wrapper {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on very small screens */
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem; /* 12px */
+  margin-top: 2.5rem; /* 40px */
+  padding-top: 2rem; /* 32px */
+  /* Clean dividing line */
+  border-top: 1px solid #292929; 
+}
+
+.dev-credit-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem; /* 8px */
+  
+  /* Start with secondary color */
+  color: #ece8e1; /* secondary */
+  font-family: "Poppins", sans-serif;
+  font-weight: 600; /* semibold */
+  text-decoration: none;
+  font-size: 1rem; /* 16px */
+  
+  /* This filter will be for the glow */
+  filter: drop-shadow(0 0 0px rgba(255, 70, 85, 0)); 
+  
+  /* Smooth transition for all properties */
+  transition: all 0.3s ease;
+}
+
+.dev-credit-icon {
+  width: 1.125rem; /* 18px */
+  height: 1.125rem; /* 18px */
+  
+  /* The icon's fill will inherit the link's text color.
+    This is very clean and efficient.
+  */
+  fill: currentColor;
+}
+
+/* --- The "Premium" Hover Effect --- */
+.dev-credit-link:hover {
+  /* Change text and icon color to primary red */
+  color: #ff4655; /* primary */
+  
+  /* Add the "Neon Glow" */
+  filter: drop-shadow(0 0 8px rgba(255, 70, 85, 0.8));
+  
+  /* Add the "Lift" effect */
+  transform: translateY(-3px);
+}

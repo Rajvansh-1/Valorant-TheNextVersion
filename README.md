@@ -17,7 +17,7 @@ This project recreates the Valorant official website layout with modern web tech
 
 ## 🛠 Tech Stack
 
-- *Frontend:* React, Vite
+- *Frontend:* React, Vite, GSAP
 - *Styling:* Tailwind CSS, PostCSS
 - *Language:* JavaScript (ES6+)
 - *Build Tool:* Vite
