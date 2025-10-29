@@ -8,23 +8,25 @@ import Agent from "./components/pages/Agent";
 import Maps from "./components/pages/Maps";
 
 const App = () => {
-  
   return (
     <BrowserRouter>
       <div className="w-full overflow-hidden">
         <Navbar />
-        <Routes>
-          <Route excat path="/" element={<Home />} />
-          <Route excat path="/agents" element={<Agents />} />
-          <Route excat path="/maps" element={<Maps />} />
-          <Route
-            excat
-            path="/agent/:agentName"
-            element={<Agent/>}
-          />
-        </Routes>
-        <CTA />
-        <Footer />
+        {/* WRAP THE CONTENT AFTER NAVBAR IN A MAIN TAG WITH PADDING */}
+        <main className="pt-[80px]">
+          <Routes>
+            <Route excat path="/" element={<Home />} />
+            <Route excat path="/agents" element={<Agents />} />
+            <Route excat path="/maps" element={<Maps />} />
+            <Route
+              excat
+              path="/agent/:agentName"
+              element={<Agent />}
+            />
+          </Routes>
+          <CTA />
+          <Footer />
+        </main>
       </div>
     </BrowserRouter>
   );
